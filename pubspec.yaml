@@ -1,0 +1,58 @@
+name: knoxxbox
+description: eCommerce Platform as a Service
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.6 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  adaptive_breakpoints: ^0.1.4
+  cupertino_icons: ^1.0.2
+  flutter_launcher_icons: ^0.11.0
+  http: ^0.13.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter_icons:
+  ios: false
+  image_path: "res/knoxxbox-logo.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "res/knoxxbox-logo.png"
+    background_color: "#ffffff"
+    theme_color: "#ffffff"
+  windows:
+    generate: false
+    image_path: "res/knoxxbox-logo.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: false
+    image_path: "res/knoxxbox-logo.png"
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - res/Knoxxbox.png
+    - res/welcome.png
+    - res/knoxxbox-logo.png
+
+  fonts:
+    - family: NotoSans
+      fonts:
+        - asset: res/NotoSans-Regular.ttf
+        - asset: res/NotoSans-Bold.ttf
+        - asset: res/NotoSans-Medium.ttf
+        - asset: res/NotoSans-Light.ttf
