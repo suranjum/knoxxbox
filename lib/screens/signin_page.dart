@@ -183,10 +183,10 @@ class _SignInPageState extends State<SignInPage> {
       setState(() {
         isWorking = false;
       });
-      if (value.contains('SUCCESS')) {
+      if (value['response'] != null) {
       } else {
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-          content: Text(value),
+          content: Text(value['error']),
           duration: const Duration(seconds: 3),
         ));
       }
